@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 import navlogo from "../assets/Images/sky2.png"
 import "../Style/Navbar.css"
 import MyVerticallyCenteredModal from './Modal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHouse, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 
 export const Navbar = () => {
     const[menuOpen, setOpen]=useState(false)
@@ -13,23 +15,26 @@ export const Navbar = () => {
       setModalShow(true)
     }
   return (
-    <div>
-         <nav>
-    <Link to="/" className='title'><img src={navlogo}/></Link>
+    <div className='nav-main p-1'>
+         <nav className='P-2'>
+    <Link to="/" className='title ms-5'><img src={navlogo}/></Link>
     <div className='menu' onClick={()=> setOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
     </div>
     
-    <ul className={menuOpen ? "open":""}>
+    <ul className={menuOpen ?"open":"close"}>
 
         <li>
-        <NavLink to="/logs"><i className="bi bi-box-arrow-in-left"></i> Login </NavLink>
+        <NavLink to="/logs">
+          {/* <i className="bi bi-box-arrow-in-left"></i>  */}
+          <FontAwesomeIcon icon={faRightToBracket} className='me-1' />        
+             Login </NavLink>
         </li>
         <li>
           
-            <NavLink to="/"><i className="bi bi-house-door-fill"></i>Home
+            <NavLink to="/">  <FontAwesomeIcon icon={faHouse} className='me-1'/>Home
            </NavLink>
             </li>
         <li>

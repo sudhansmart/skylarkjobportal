@@ -12,20 +12,20 @@ import Jobrole from './Jobrole'
 
 export const Home = () => {
   return (
-    <div>
+    <div >
         
     <div className='image text-center'>
         <div className='image-overlay '>
-     
-          <h1 className='text'>Find Your Jobs</h1>
-          <p className='txt'>We are Hiring!!!</p>
+          <div className='p-4'>
+            <p className='txt'>We are Hiring!!!</p>
             <h1 className='text mt-5'>The Easiest Way to Get Your New Job</h1>
             <h2 className='text '>We offer 12000 jobs vacation right now</h2>
        
             <Link to="/forms"><span> <button className='butt' >Upload Your CV</button> </span> </Link>
             <div className='forms-group btn1 '>
         <button className='btns'><i className='fa fa-search'></i></button>
-        <input type='text' className='input' placeholder='Search something...'/>
+        <input type='text' className='home-search' placeholder='Search something...'/>
+        </div>
         </div>
     </div>
     </div>

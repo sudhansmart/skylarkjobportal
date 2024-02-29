@@ -47,8 +47,8 @@ const Jobrole = () => {
                  
                   <h5 className='card-title'>{data.name}</h5>
                   <img src={data.img} alt={data.name} />
-                  <h6 className='card-title'><i class="bi bi-suitcase-lg-fill me-1"></i>{data.level}</h6>
-                  <h6 className='card-title'><i class="bi bi-currency-dollar"></i>{data.ctc}</h6>
+                  <h6 className='card-title'><i className="bi bi-suitcase-lg-fill me-1"></i>{data.level}</h6>
+                  <h6 className='card-title'><i className="bi bi-currency-dollar"></i>{data.ctc}</h6>
                   <h6>
                     {/* Use Link component to create a link to the specified path */}
                     <Link to={data.path}>

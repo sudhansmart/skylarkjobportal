@@ -1,12 +1,19 @@
 .active:hover{
     color: blue;
   }
+  
+  .close{
+    margin: 0;
+  }
+
+
   nav{
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: #fff;
       position: sticky;
+      padding: 3px;
       top: 0;
       border: 3px solid black;
   }
