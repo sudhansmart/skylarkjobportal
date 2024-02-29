@@ -1,0 +1,27 @@
+#whatsapp{
+    height: 20px;
+    width: 20px;
+    background-color:  greenyellow;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#face{
+    height: 20px;
+    width: 20px;
+    background-color:  blue;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#insta{
+    height: 20px;
+    width: 20px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    border-radius: 10px;
+    font-size: 25px;
+}
+#whatsapp:hover{
+    background-color: greenyellow;
+}
